@@ -1,0 +1,351 @@
+@font-face{
+    font-family: "Monotype Corsiva";
+    src: url('./fonts/Monotype\ Corsiva.ttf');
+}
+
+/* CSS reset */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ html {
+    font-size: 16px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+  
+main {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+}
+  
+h1 {
+    font-size: 2em;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+    color: initial;
+}
+
+img {
+    border-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    all: unset;
+    display: inline-block;
+}
+
+input {
+    all: unset;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px; 
+    border: 1px solid #C4C4C4; 
+    border-radius: 1px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none; 
+}
+
+
+/*Custom CSS*/
+
+.main-header{
+    width: 100%;
+    font-family: "Montserrat", serif;
+}
+
+.user-navbar__items{
+    margin: 0;
+    padding: 0;
+}
+
+.user-navbar__item > a{
+    color: #4A4B4D;
+}
+
+.user-navbar{
+    width: 100%;
+    padding: 12.8px 16px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #D2D2D2;
+    font: 400 0.75rem/1.2 "Montserrat";
+    text-align: right;
+}
+
+.user-navbar__items > .user-navbar__item{
+    display: inline-block;
+    text-align: center;
+    min-width: fit-content;
+    width: 5%;
+    max-width: 100px;
+    margin-right: 16px;
+}
+
+/* Site navbar style */
+.site-navbar{
+    width: 100%;
+    padding: 32px 0;
+    min-width: fit-content;
+    background-color: #FFFFFF;
+    font: 400 1rem/1.2 "Montserrat";
+}
+
+.site-navbar__item{
+    min-width: fit-content;
+    display: inline-block;
+}
+
+.search-group{
+    min-width: fit-content;
+    width: 15%;
+    text-align: center;
+    padding: 0 0 0 20px;
+}
+
+.search-group > *{
+    display: inline-block;
+}
+
+.site-navbar__links{
+    min-width: fit-content;
+    display: inline-block;
+    width: 65%;
+    text-align: center;
+}
+
+.site-navbar__link{
+    min-width: fit-content;
+    width: 15%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.site-navbar__link > a{
+    color: #222222;
+}
+
+.user-actions{
+    display: inline-block;
+    padding-right: 20px;
+    min-width: fit-content;
+    width: 12%;
+    text-align: right;
+}
+
+.user-actions > p{
+    margin-left: 12px;
+}
+
+.search-field{
+    visibility: hidden;
+    width: 50%;
+}
+
+.company-name{
+    font: italic 400 2.5rem/1.1 "Monotype Corsiva";
+    text-align: center;
+}
+
+.company-name > a{
+    color: #004197;
+}
+
+.company-name span{
+    color: #E2342D;
+}
+
+/* To add a line break after the First word*/
+.company-name span::after{
+    content: "\A";
+    white-space: pre;
+}
+
+.user-actions > p:nth-child(2){
+    vertical-align: bottom;
+}
+
+/* Main */
+
+.form-section{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    color: #222222;
+}
+
+.address-form > h1 {
+    margin-bottom:22px;
+    font:700 2.25rem/1.5 "Poppins", sans-serif;
+    color: #222222;
+}
+
+.address-form > p{
+    margin-bottom: 20px;
+    font:700 1.25rem/1.5 "Poppins", sans-serif;
+    color: #222222;
+}
+
+.address-form{
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    font: 400 1.125rem/1.2 "Montserrat", sans-serif;
+    text-align: left;
+    color: #222222;
+}
+
+.address-form input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group{
+    width: 100%;
+}
+
+.input-group > input {
+    width: 49%;
+}
+
+.input-group > input:nth-child(1) {
+    margin-right: 1.3%;
+}
+
+.address-form__action-btns{
+    margin-top: 54px;
+}
+
+.address-form__action-btns > *{
+    display: inline-block;
+    width: 49%;
+}
+
+.address-form__action-btns > p{
+    font-size: 0.875rem;
+    line-height: 1.2;
+}
+
+.address-form__action-btns > p > img{
+    vertical-align: middle;
+}
+
+.address-form__action-btns > button{
+    padding: 6px 0;
+    color: #FFFFFF;
+    background-color: #E2342D;
+    border-radius: 2px;
+    font: 700 1.5rem/1.5 "Poppins", sans-serif;
+    text-align: center;
+}
+
+.form-img{
+    display: inline-block;
+}
+
+.top-footer{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.top-footer > *{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.top-footer >.company-name{
+    width: 30%;
+    padding-left: 6%;
+    font: italic 400 3.375rem/1.1 "Monotype Corsiva";
+    text-align: left;
+}
+
+.top-footer > .company-name > a{
+    display: inline-block;
+    text-align: left;
+}
+
+.top-footer ul{
+    display: inline-block;
+}
+
+.footer-nav-links{
+    width: 15%;
+    font: 400 1.125rem/1.2 "Montserrat";
+    color: #222222;
+}
+
+.footer-nav-link{
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-nav-link > a{
+    color: #222222;
+}
+
+.footer-contact__card{
+    width: 30%;
+    font: 400 1.125rem/1.4 "Montserrat";
+    text-align: left;
+    color: #222222;
+}
+
+.footer-contact__card-message{
+    margin-bottom: 35px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.footer-social-link{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.footer-rights{
+    text-align: center;
+    color: #222222;
+    font: 400 1.125rem/1.2 "Montserrat";
+}
+
+.email-group{
+    margin-right: 20px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #222222;
+}
+
+.email-field{
+    border: none;
+    width: 90%;
+}
+
+.footer-rights{
+    padding: 40px 0;
+}
