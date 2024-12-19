@@ -1,149 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <!-- Font Families -->
-     <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Checkout Form</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>New title</title>
+  </head>
+  <body>
     <header class="main-header">
-        <nav class="user-navbar">
-            <ul class="user-navbar__items">
-                <li class="user-navbar__item"><a href="#">Return</a></li>
-                <li class="user-navbar__item"><a href="#">Help</a></li>
-                <li class="user-navbar__item"><a href="#">Register</a>/<a href="#">Sign In</a></li>
-            </ul>
-        </nav>
+      <nav class="user-navbar">
+        <ul class="user-navbar__items">
+          <li class="user-navbar__item"><a href="#">Return</a></li>
+          <li class="user-navbar__item"><a href="#">Help</a></li>
+          <li class="user-navbar__item">
+            <a href="#">Register</a>/<a href="#">Sign In</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <nav class="site-navbar">
-            <div class="site-navbar__item search-group">
-                <img class="search-icon" src="./images/search-icon.png" alt="search icon">
-                <input class="search-field" type="search">
+      <nav class="site-navbar">
+        <div class="site-navbar__item search-group">
+          <img
+            class="search-icon"
+            src="./images/search-icon.png"
+            alt="search icon"
+          />
+          <input class="search-field" type="search" />
+        </div>
+        <ul class="site-navbar__links">
+          <li class="site-navbar__item site-navbar__link">
+            <a href="#">SHOP</a>
+          </li>
+          <li class="site-navbar__item site-navbar__link">
+            <a href="#">ESSENTIALS</a>
+          </li>
+          <li class="site-navbar__item site-navbar__link company-name">
+            <a href="#"><span>Macc</span> Essentials</a>
+          </li>
+          <li class="site-navbar__item site-navbar__link">
+            <a href="#">BEST SELLERS</a>
+          </li>
+          <li class="site-navbar__item site-navbar__link">
+            <a href="#">ABOUT US</a>
+          </li>
+          <li class="site-navbar__item site-navbar__link">
+            <a href="#">CONTACT US</a>
+          </li>
+        </ul>
+        <div class="user-actions">
+          <p class="site-navbar__item">
+            <a href="#"
+              ><img src="./images/profile.png" alt="profile icon"
+            /></a>
+          </p>
+          <p class="site-navbar__item">
+            <a href="#"
+              ><img src="./images/notification.png" alt="notification icon"
+            /></a>
+          </p>
+          <p class="site-navbar__item">
+            <a href="#"><img src="./images/cart.png" alt="cart icon" /></a>
+          </p>
+        </div>
+      </nav>
+      <section class="form-section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus nemo temporibus neque atque nostrum sunt sequi velit
+          earum, omnis id.
+        </p>
+        <form class="address-form" action="#">
+          <h1>CHECKOUT</h1>
+          <p>Delivery Address</p>
+          <div class="input-group">
+            <input type="text" value="John" />
+            <input type="text" value="Wick" />
+          </div>
+          <input type="text" value="Street 32, Pasror road, Daska" />
+          <input type="text" value="NA" />
+          <div class="input-group">
+            <input type="text" value="51010" />
+            <input type="text" value="Sialkot" />
+          </div>
+          <input type="tel" value="+923445676890" />
+          <div class="address-form__action-btns">
+            <p>
+              <img src="./images/arrow_img.png" alt="Back to cart" /> Go back to
+              cart
+            </p>
+            <button>Save And Continue</button>
+          </div>
+        </form>
+        <div class="form-img">
+          <img src="./images/form-img.png" alt="" />
+        </div>
+      </section>
+      <footer>
+        <div class="top-footer">
+          <p class="company-name">
+            <a href="#"><span>Macc</span>Essentials</a>
+          </p>
+
+          <ul class="footer-nav-links">
+            <li class="footer-nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="">Collection</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="">Products</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav-links">
+            <li class="footer-nav-link">
+              <a href="#">About</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="">Contact</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+
+          <div class="footer-contact__card">
+            <p class="footer-contact__card-message">
+              Be the first to know about our biggest and best sales. We'll never
+              send more than one email a month.
+            </p>
+            <div class="email-group">
+              <input
+                class="email-field"
+                type="email"
+                placeholder="ENTER YOUR EMAIL"
+              />
+              <img
+                class="mail-icon"
+                src="./images/mail-icon.png"
+                alt="mail icon"
+              />
             </div>
-            <ul class="site-navbar__links">
-                <li class="site-navbar__item site-navbar__link">
-                    <a href="#">SHOP</a>
+            <div class="social-links">
+              <ul class="footer-social-links">
+                <li class="footer-social-link">
+                  <a href="#">
+                    <img src="./images/twitter-icon.png" alt="twitter icon" />
+                  </a>
                 </li>
-                <li class="site-navbar__item site-navbar__link">
-                    <a href="#">ESSENTIALS</a>
+                <li class="footer-social-link">
+                  <a href="#">
+                    <img src="./images/linkedIn-icon.png" alt="twitter icon" />
+                  </a>
                 </li>
-                <li class="site-navbar__item site-navbar__link company-name">
-                    <a href="#"><span>Macc</span> Essentials</a>
+                <li class="footer-social-link">
+                  <a href="#">
+                    <img src="./images/facebook-icon.png" alt="twitter icon" />
+                  </a>
                 </li>
-                <li class="site-navbar__item site-navbar__link">
-                    <a href="#">BEST SELLERS</a>
+                <li class="footer-social-link">
+                  <a href="#">
+                    <img src="./images/insta-icon.png" alt="twitter icon" />
+                  </a>
                 </li>
-                <li class="site-navbar__item site-navbar__link">
-                    <a href="#">ABOUT US</a>
-                </li>
-            </ul>
-            <div class="user-actions">
-                <p class="site-navbar__item">
-                    <a href="#"><img src="./images/profile.png" alt="profile icon"></a>
-                </p>
-                <p class="site-navbar__item">
-                    <a href="#"><img src="./images/notification.png" alt="notification icon"></a>
-                </p>
-                <p class="site-navbar__item">
-                    <a href="#"><img src="./images/cart.png" alt="cart icon"></a>
-                </p>
+              </ul>
             </div>
-        </nav>
-        <section class="form-section">
-            <form class="address-form" action="#">
-                <h1>CHECKOUT</h1>
-                <p>Delivery Address</p>
-                <div class="input-group">
-                    <input type="text" value="John">
-                    <input type="text" value="Wick">
-                </div>
-                <input type="text" value="Street 32, Pasror road, Daska">
-                <input type="text" value="NA">
-                <div class="input-group">
-                    <input type="text" value="51010">
-                    <input type="text" value="Sialkot">
-                </div>
-                <input type="tel" value="+923445676890">
-                <div class="address-form__action-btns">
-                    <p><img src="./images/arrow_img.png" alt="Back to cart"> Go back to cart</p>
-                    <button>Save And Continue</button>
-                </div>
-            </form>
-            <div class="form-img">
-                <img src="./images/form-img.png" alt="">
-            </div>
-        </section>
-        <footer>
-            <div class="top-footer">
-                <p class="company-name">
-                    <a href="#"><span>Macc</span>Essentials</a>
-                </p>
-    
-                <ul class="footer-nav-links">
-                    <li class="footer-nav-link">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="footer-nav-link">
-                        <a href="">Collection</a>
-                    </li>
-                    <li class="footer-nav-link">
-                        <a href="">Products</a>
-                    </li>
-                </ul>
-    
-                <ul class="footer-nav-links">
-                    <li class="footer-nav-link">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="footer-nav-link">
-                        <a href="">Contact</a>
-                    </li>
-                    <li class="footer-nav-link">
-                        <a href="">FAQ</a>
-                    </li>
-                </ul>
-    
-                <div class="footer-contact__card">
-                    <p class="footer-contact__card-message">Be the first to know about our biggest and best sales. We'll never send more than one email a month.</p>
-                    <div class="email-group">
-                        <input class="email-field" type="email" placeholder="ENTER YOUR EMAIL">
-                        <img class="mail-icon" src="./images/mail-icon.png" alt="mail icon">
-                    </div>
-                    <div class="social-links">
-                        <ul class="footer-social-links">
-                            <li class="footer-social-link">
-                                <a href="#">
-                                    <img src="./images/twitter-icon.png" alt="twitter icon">
-                                </a>
-                            </li>
-                            <li class="footer-social-link">
-                                <a href="#">
-                                    <img src="./images/linkedIn-icon.png" alt="twitter icon">
-                                </a>
-                            </li>
-                            <li class="footer-social-link">
-                                <a href="#">
-                                    <img src="./images/facebook-icon.png" alt="twitter icon">
-                                </a>
-                            </li>
-                            <li class="footer-social-link">
-                                <a href="#">
-                                    <img src="./images/insta-icon.png" alt="twitter icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p class="footer-rights">All rights are reserved</p>
-        </footer>
+          </div>
+        </div>
+        <p class="footer-rights">All rights are reserved</p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
